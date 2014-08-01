@@ -1,0 +1,6 @@
+C:\Users\sirjosh33\Documents\GitHub\CMSpaceship\CMSpaceship\bin\CMSpaceship.dll.config
+C:\Users\sirjosh33\Documents\GitHub\CMSpaceship\CMSpaceship\bin\CMSpaceship.dll
+C:\Users\sirjosh33\Documents\GitHub\CMSpaceship\CMSpaceship\bin\CMSpaceship.pdb
+C:\Users\sirjosh33\Documents\GitHub\CMSpaceship\CMSpaceship\obj\Debug\CMSpaceship.csprojResolveAssemblyReference.cache
+C:\Users\sirjosh33\Documents\GitHub\CMSpaceship\CMSpaceship\obj\Debug\CMSpaceship.dll
+C:\Users\sirjosh33\Documents\GitHub\CMSpaceship\CMSpaceship\obj\Debug\CMSpaceship.pdb

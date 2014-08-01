@@ -57,16 +57,32 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\QuickEvaluation.aspx" />
+    <Content Include="Contact\NewContact.aspx" />
     <Content Include="default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\QuickEvaluation.aspx.cs">
+      <DependentUpon>QuickEvaluation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\QuickEvaluation.aspx.designer.cs">
+      <DependentUpon>QuickEvaluation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CM_Master.Master.cs">
       <DependentUpon>CM_Master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CM_Master.Master.designer.cs">
       <DependentUpon>CM_Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Contact\NewContact.aspx.cs">
+      <DependentUpon>NewContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact\NewContact.aspx.designer.cs">
+      <DependentUpon>NewContact.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
@@ -87,9 +103,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
-    <Folder Include="Context\" />
+    <Folder Include="css\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
