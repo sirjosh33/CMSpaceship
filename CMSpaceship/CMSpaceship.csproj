@@ -38,6 +38,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ion.aspnet">
+      <HintPath>..\..\Ion\Ion\Ion.aspnet\bin\Release\Ion.aspnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Ion.Reflection">
+      <HintPath>..\..\Ion\Ion\Ion.aspnet\bin\Release\Ion.Reflection.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -84,6 +90,7 @@
     <Compile Include="Contact\NewContact.aspx.designer.cs">
       <DependentUpon>NewContact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Context\ReusableContext.cs" />
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
