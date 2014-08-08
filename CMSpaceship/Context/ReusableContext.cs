@@ -7,11 +7,12 @@ using Capsule.Data;
 
 namespace CMSpaceship.Context
 {
-    public class ReusableContext
-    {
-        public ReusableContext() 
-        {
+	public class ReusableContext : DataContext
+	{
+		public ReusableContext()
+			: base(Properties.Settings.Default.SqlLive)
+		{
 
-        }
-    }
+		}
+	}
 }
