@@ -22,22 +22,22 @@ namespace CMSpaceship.Account {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// First_Name control.
+        /// lblFirstName1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label First_Name;
+        protected global::System.Web.UI.WebControls.Label lblFirstName1;
         
         /// <summary>
-        /// FirstName control.
+        /// lblFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label FirstName;
+        protected global::System.Web.UI.WebControls.Label lblFirstName;
         
         /// <summary>
         /// btxtFirstName control.
@@ -49,13 +49,13 @@ namespace CMSpaceship.Account {
         protected global::Ion.aspnet.Binding.BindableTextBox btxtFirstName;
         
         /// <summary>
-        /// LastName control.
+        /// lblLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LastName;
+        protected global::System.Web.UI.WebControls.Label lblLastName;
         
         /// <summary>
         /// btxtLastName control.
@@ -67,13 +67,13 @@ namespace CMSpaceship.Account {
         protected global::Ion.aspnet.Binding.BindableTextBox btxtLastName;
         
         /// <summary>
-        /// Email control.
+        /// lblEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Email;
+        protected global::System.Web.UI.WebControls.Label lblEmail;
         
         /// <summary>
         /// btxtEmail control.
@@ -85,13 +85,13 @@ namespace CMSpaceship.Account {
         protected global::Ion.aspnet.Binding.BindableTextBox btxtEmail;
         
         /// <summary>
-        /// UserName control.
+        /// lblUserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label UserName;
+        protected global::System.Web.UI.WebControls.Label lblUserName;
         
         /// <summary>
         /// btxtUsername control.
@@ -103,13 +103,13 @@ namespace CMSpaceship.Account {
         protected global::Ion.aspnet.Binding.BindableTextBox btxtUsername;
         
         /// <summary>
-        /// Password control.
+        /// lblPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Password;
+        protected global::System.Web.UI.WebControls.Label lblPassword;
         
         /// <summary>
         /// btxtPassword control.
@@ -121,13 +121,13 @@ namespace CMSpaceship.Account {
         protected global::Ion.aspnet.Binding.BindableTextBox btxtPassword;
         
         /// <summary>
-        /// ConfirmPassword control.
+        /// lblConfirmPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ConfirmPassword;
+        protected global::System.Web.UI.WebControls.Label lblConfirmPassword;
         
         /// <summary>
         /// btxtPasswordConfirm control.
@@ -139,13 +139,13 @@ namespace CMSpaceship.Account {
         protected global::Ion.aspnet.Binding.BindableTextBox btxtPasswordConfirm;
         
         /// <summary>
-        /// Street control.
+        /// lblStreet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Street;
+        protected global::System.Web.UI.WebControls.Label lblStreet;
         
         /// <summary>
         /// btxtStreet control.
@@ -157,13 +157,13 @@ namespace CMSpaceship.Account {
         protected global::Ion.aspnet.Binding.BindableTextBox btxtStreet;
         
         /// <summary>
-        /// City control.
+        /// lblCity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label City;
+        protected global::System.Web.UI.WebControls.Label lblCity;
         
         /// <summary>
         /// btxtCity control.
@@ -175,13 +175,13 @@ namespace CMSpaceship.Account {
         protected global::Ion.aspnet.Binding.BindableTextBox btxtCity;
         
         /// <summary>
-        /// StateID control.
+        /// lblStateID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label StateID;
+        protected global::System.Web.UI.WebControls.Label lblStateID;
         
         /// <summary>
         /// State control.
@@ -193,13 +193,13 @@ namespace CMSpaceship.Account {
         protected global::Ion.aspnet.Binding.BindableTextBox State;
         
         /// <summary>
-        /// Zip control.
+        /// lblZip control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Zip;
+        protected global::System.Web.UI.WebControls.Label lblZip;
         
         /// <summary>
         /// btxtZip control.
@@ -211,13 +211,13 @@ namespace CMSpaceship.Account {
         protected global::Ion.aspnet.Binding.BindableTextBox btxtZip;
         
         /// <summary>
-        /// Phone1 control.
+        /// lblPhone1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Phone1;
+        protected global::System.Web.UI.WebControls.Label lblPhone1;
         
         /// <summary>
         /// btxtPhone1 control.
@@ -229,13 +229,13 @@ namespace CMSpaceship.Account {
         protected global::Ion.aspnet.Binding.BindableTextBox btxtPhone1;
         
         /// <summary>
-        /// Phone2 control.
+        /// lblPhone2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Phone2;
+        protected global::System.Web.UI.WebControls.Label lblPhone2;
         
         /// <summary>
         /// btxtPhone2 control.
@@ -247,13 +247,13 @@ namespace CMSpaceship.Account {
         protected global::Ion.aspnet.Binding.BindableTextBox btxtPhone2;
         
         /// <summary>
-        /// SecurityQuestion control.
+        /// lblSecurityQuestion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label SecurityQuestion;
+        protected global::System.Web.UI.WebControls.Label lblSecurityQuestion;
         
         /// <summary>
         /// btxtSecurityQuestion control.
@@ -265,13 +265,13 @@ namespace CMSpaceship.Account {
         protected global::Ion.aspnet.Binding.BindableTextBox btxtSecurityQuestion;
         
         /// <summary>
-        /// SecurityAnswer control.
+        /// lblSecurityAnswer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label SecurityAnswer;
+        protected global::System.Web.UI.WebControls.Label lblSecurityAnswer;
         
         /// <summary>
         /// btxtSecurityAnswer control.
