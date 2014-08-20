@@ -11,5 +11,41 @@ namespace CMSpaceship {
     
     
     public partial class _default {
+        
+        /// <summary>
+        /// btxtFirstName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ion.aspnet.Binding.BindableTextBox btxtFirstName;
+        
+        /// <summary>
+        /// btxtLastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ion.aspnet.Binding.BindableTextBox btxtLastName;
+        
+        /// <summary>
+        /// btxtEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ion.aspnet.Binding.BindableTextBox btxtEmail;
+        
+        /// <summary>
+        /// btn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn;
     }
 }

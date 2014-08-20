@@ -5,9 +5,9 @@
     <Setting Name="SqlLive" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=lin.arvixe.com;Initial Catalog=IonDataStore_Live;User ID=jdemeuse1204;Password=aiwa1122;MultipleActiveResultSets=true&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=lin.arvixe.com;Initial Catalog=CreditMatters_Live;User ID=Josh;Password=password;MultipleActiveResultSets=true&lt;/ConnectionString&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=lin.arvixe.com;Initial Catalog=IonDataStore_Live;User ID=jdemeuse1204;Password=aiwa1122;MultipleActiveResultSets=true</Value>
+      <Value Profile="(Default)">Data Source=lin.arvixe.com;Initial Catalog=CreditMatters_Live;User ID=Josh;Password=password;MultipleActiveResultSets=true</Value>
     </Setting>
   </Settings>
 </SettingsFile>

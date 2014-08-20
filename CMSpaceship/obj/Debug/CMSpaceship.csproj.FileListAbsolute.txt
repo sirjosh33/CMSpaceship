@@ -20,3 +20,7 @@ C:\Users\Jimmer\Documents\GitHub\CMSpaceship\CMSpaceship\bin\Ion.Data.Linq.pdb
 C:\Users\Jimmer\Documents\GitHub\CMSpaceship\CMSpaceship\obj\Debug\CMSpaceship.csprojResolveAssemblyReference.cache
 C:\Users\Jimmer\Documents\GitHub\CMSpaceship\CMSpaceship\obj\Debug\CMSpaceship.dll
 C:\Users\Jimmer\Documents\GitHub\CMSpaceship\CMSpaceship\obj\Debug\CMSpaceship.pdb
+C:\Users\sirjosh33\Documents\GitHub\CMSpaceship\CMSpaceship\bin\Capsule.dll
+C:\Users\sirjosh33\Documents\GitHub\CMSpaceship\CMSpaceship\bin\Ion.Data.Linq.dll
+C:\Users\sirjosh33\Documents\GitHub\CMSpaceship\CMSpaceship\bin\Capsule.pdb
+C:\Users\sirjosh33\Documents\GitHub\CMSpaceship\CMSpaceship\bin\Ion.Data.Linq.pdb

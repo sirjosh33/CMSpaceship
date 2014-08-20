@@ -52,6 +52,7 @@
       <HintPath>..\..\Ion\Ion\Ion.aspnet\bin\Release\Ion.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -70,12 +71,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Account\Register.aspx" />
     <Content Include="App_Code\QuickEvaluation.aspx" />
-    <Content Include="Contact\NewContact.aspx" />
+    <Content Include="css\MainPage.css" />
     <Content Include="default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Code\QuickEvaluation.aspx.cs">
       <DependentUpon>QuickEvaluation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -89,13 +98,6 @@
     </Compile>
     <Compile Include="CM_Master.Master.designer.cs">
       <DependentUpon>CM_Master.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Contact\NewContact.aspx.cs">
-      <DependentUpon>NewContact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact\NewContact.aspx.designer.cs">
-      <DependentUpon>NewContact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Context\ReusableContext.cs" />
     <Compile Include="default.aspx.cs">
@@ -127,7 +129,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="css\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
