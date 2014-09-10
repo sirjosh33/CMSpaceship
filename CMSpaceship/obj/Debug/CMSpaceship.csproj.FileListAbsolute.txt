@@ -24,3 +24,5 @@ C:\Users\sirjosh33\Documents\GitHub\CMSpaceship\CMSpaceship\bin\Capsule.dll
 C:\Users\sirjosh33\Documents\GitHub\CMSpaceship\CMSpaceship\bin\Ion.Data.Linq.dll
 C:\Users\sirjosh33\Documents\GitHub\CMSpaceship\CMSpaceship\bin\Capsule.pdb
 C:\Users\sirjosh33\Documents\GitHub\CMSpaceship\CMSpaceship\bin\Ion.Data.Linq.pdb
+C:\Users\sirjosh33\Documents\GitHub\CMSpaceship\CMSpaceship\bin\Ion.dll
+C:\Users\sirjosh33\Documents\GitHub\CMSpaceship\CMSpaceship\bin\Ion.pdb

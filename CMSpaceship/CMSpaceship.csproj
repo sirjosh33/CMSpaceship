@@ -41,6 +41,9 @@
     <Reference Include="Capsule">
       <HintPath>..\..\Capsule\Capsule\bin\Debug\Capsule.dll</HintPath>
     </Reference>
+    <Reference Include="Ion">
+      <HintPath>..\..\Ion\Ion\Ion\bin\Release\Ion.dll</HintPath>
+    </Reference>
     <Reference Include="Ion.aspnet">
       <HintPath>..\..\Ion\Ion\Ion.aspnet\bin\Release\Ion.aspnet.dll</HintPath>
     </Reference>

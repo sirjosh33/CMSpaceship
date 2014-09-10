@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using Ion.aspnet.Binding;
 using CMSpaceship.Context;
 using Capsule.Data.Tables;
+using Ion.Security;
 
 namespace CMSpaceship.Account
 {
@@ -25,7 +26,9 @@ namespace CMSpaceship.Account
             PullDataContextFromPage();
             using (ReusableContext context = new ReusableContext())
             {
-                context.SaveChanges((Contact)DataContext);
+                Contact contact = (Contact)DataContext;
+                contact.Password = Cryptography.Encrypt(btxtPassword.Text,Properties.Settings.Default.SecurityPassphrase);
+                context.SaveChanges((contact));
                 
             }
         }

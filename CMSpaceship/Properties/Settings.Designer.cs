@@ -33,5 +33,14 @@ namespace CMSpaceship.Properties {
                 return ((string)(this["SqlLive"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("golf2014")]
+        public string SecurityPassphrase {
+            get {
+                return ((string)(this["SecurityPassphrase"]));
+            }
+        }
     }
 }

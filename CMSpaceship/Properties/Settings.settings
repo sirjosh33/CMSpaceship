@@ -9,5 +9,8 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=lin.arvixe.com;Initial Catalog=CreditMatters_Live;User ID=Josh;Password=password;MultipleActiveResultSets=true</Value>
     </Setting>
+    <Setting Name="SecurityPassphrase" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">golf2014</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
