@@ -35,3 +35,4 @@ C:\Users\Jimmer\Documents\GitHub\CMSpaceship\CMSpaceship\bin\SkyGroundLabs.aspne
 C:\Users\Jimmer\Documents\GitHub\CMSpaceship\CMSpaceship\bin\SkyGroundLabs.Cryptography.pdb
 C:\Users\Jimmer\Documents\GitHub\CMSpaceship\CMSpaceship\bin\SkyGroundLabs.Data.Entity.pdb
 C:\Users\Jimmer\Documents\GitHub\CMSpaceship\CMSpaceship\bin\SkyGroundLabs.Reflection.pdb
+C:\Users\Dan\Documents\GitHub\CMSpaceship\CMSpaceship\obj\Debug\CMSpaceship.csprojResolveAssemblyReference.cache

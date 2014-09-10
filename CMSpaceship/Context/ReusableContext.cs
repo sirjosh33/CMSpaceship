@@ -6,7 +6,7 @@ using Capsule.Data;
 
 namespace CMSpaceship.Context
 {
-	public class ReusableContext : DbContext
+	public class ReusableContext : DbContextJosh
 	{
 		public ReusableContext()
 			: base(Properties.Settings.Default.SqlLive)
@@ -15,7 +15,7 @@ namespace CMSpaceship.Context
 		}
 	}
 
-    public class AuthenticationResult
+    public class AuthenticationResult : ReusableContext
     {
 
     }
