@@ -55,7 +55,8 @@
     <Reference Include="SkyGroundLabs.Cryptography">
       <HintPath>..\..\SkyGroundLabs\SkyGroundLabs\SkyGroundLabs.Cryptography\bin\Release\SkyGroundLabs.Cryptography.dll</HintPath>
     </Reference>
-    <Reference Include="SkyGroundLabs.Data.Entity">
+    <Reference Include="SkyGroundLabs.Data.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\SkyGroundLabs\SkyGroundLabs\SkyGroundLabs.Data.Entity\bin\Release\SkyGroundLabs.Data.Entity.dll</HintPath>
     </Reference>
     <Reference Include="SkyGroundLabs.Reflection">

@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using SkyGroundLabs.Data.Entity.Mapping;
 using CMSpaceship.Context;
 
 namespace CMSpaceship.Account
@@ -21,25 +20,25 @@ namespace CMSpaceship.Account
         {
             using (var context = new ReusableContext())
             {
-                AuthenticationResult result = context.AuthenticationFunctions.Validate(
-                username.ToUpper(),
-                password,
-                Properties.Settings.Default.Passphrase);
+				//AuthenticationResult result = context.AuthenticationFunctions.Validate(
+				//username.ToUpper(),
+				//password,
+				//Properties.Settings.Default.Passphrase);
 
-                if (result == AuthenticationResult.Pass)
-                {
-                    var user = context.UserFunctions.GetUser(username.ToUpper());
-                    Session["UserID"] = user.ID;
-                    Response.Redirect("~/Account/Home.aspx");
-                }
-                else if (result == AuthenticationResult.AttemptsExceeded)
-                {
-                    lblLoginFail.Text = "Account Locked";
-                }
-                else
-                {
-                    lblLoginFail.Text = "Username/Password Incorrect";
-                }
+				//if (result == AuthenticationResult.Pass)
+				//{
+				//	var user = context.UserFunctions.GetUser(username.ToUpper());
+				//	Session["UserID"] = user.ID;
+				//	Response.Redirect("~/Account/Home.aspx");
+				//}
+				//else if (result == AuthenticationResult.AttemptsExceeded)
+				//{
+				//	lblLoginFail.Text = "Account Locked";
+				//}
+				//else
+				//{
+				//	lblLoginFail.Text = "Username/Password Incorrect";
+				//}
             }
         }
     }
