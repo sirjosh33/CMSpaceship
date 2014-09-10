@@ -4,10 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Ion.aspnet.Binding;
+using SkyGroundLabs.aspnet.Binding;
 using CMSpaceship.Context;
 using Capsule.Data.Tables;
-using Ion.Security;
+using SkyGroundLabs.Cryptography;
+using Capsule.Data;
 
 namespace CMSpaceship.Account
 {
@@ -27,7 +28,7 @@ namespace CMSpaceship.Account
             using (ReusableContext context = new ReusableContext())
             {
                 Contact contact = (Contact)DataContext;
-                contact.Password = Cryptography.Encrypt(btxtPassword.Text,Properties.Settings.Default.SecurityPassphrase);
+                contact.Password = CryptographyServices.Encrypt(btxtPassword.Text,Properties.Settings.Default.SecurityPassphrase);
                 context.SaveChanges((contact));
                 
             }

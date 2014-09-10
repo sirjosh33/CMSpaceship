@@ -6,10 +6,12 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using CMSpaceship.Context;
 using Capsule.Data.Tables;
-using System.Data.Linq;
-using Ion.Data.Linq;
-using Ion.aspnet.Binding;
-
+using SkyGroundLabs.Data.Entity;
+using SkyGroundLabs.Data.Entity.Mapping;
+using SkyGroundLabs.aspnet.Binding;
+using SkyGroundLabs.Reflection;
+using Capsule.Data;
+using SkyGroundLabs.Cryptography;
 
 
 namespace CMSpaceship
@@ -22,29 +24,6 @@ namespace CMSpaceship
             {
                 DataContext = new Contact();
             }
-
-            
-            //using (ReusableContext context = new ReusableContext())
-            //{
-                /*Contact c = new Contact();
-                c.FirstName = "josh";                
-                c.LastName = "Krueger";
-                c.Email = "joshuadkrueger@gmail.com";
-                context.SaveChanges(c);
-                 */
-
-              //  Contact c = context.Contacts.Find(1L);
-                
-
-                //lookup record
-                /*
-                if (c != null)
-                {
-
-                }
-                 */
-                
-            //}
 		}
 
         protected void btn_Click(object sender, EventArgs e)
