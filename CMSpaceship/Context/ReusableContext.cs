@@ -14,4 +14,9 @@ namespace CMSpaceship.Context
 
 		}
 	}
+
+    public class AuthenticationResult
+    {
+
+    }
 }
