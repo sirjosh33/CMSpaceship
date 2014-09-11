@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using CMSpaceship.Context;
+using Capsule.Data;
 
 namespace CMSpaceship.Account
 {
@@ -12,17 +13,14 @@ namespace CMSpaceship.Account
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void _login(string username, string password)
         {
-            using (var context = new ReusableContext())
+            using (var context = new AuthenticateFunctions())
             {
-                AuthenticationResult result = context.AuthenticateFunctions.Validate(
-                username.ToUpper(),
-                password,
-                Properties.Settings.Default.Passphrase);
+                AuthenticationResult result = context.Validate(username.ToUpper(), password, Properties.Settings.Default.SecurityPassphrase);
 
                 if (result == AuthenticationResult.Pass)
                 {
