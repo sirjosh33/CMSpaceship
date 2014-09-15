@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="CMSpaceship.Account.Register" %>
 
-<%@ Register TagPrefix="uc" Namespace="Ion.aspnet.Binding" Assembly="Ion.aspnet" %>
+<%@ Register TagPrefix="uc" Namespace="SkyGroundLabs.aspnet" Assembly="SkyGroundLabs.aspnet" %>
 
 <!DOCTYPE html>
 

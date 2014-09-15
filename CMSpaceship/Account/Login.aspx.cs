@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using CMSpaceship.Context;
 using Capsule.Data;
+using Capsule.Data.Tables;
 
 namespace CMSpaceship.Account
 {
@@ -13,22 +14,26 @@ namespace CMSpaceship.Account
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (!Page.IsPostBack)
+            {
+                //DataContext = new Contact();
+            }
         }
 
         private void _login(string username, string password)
         {
             using (var context = new AuthenticateFunctions())
             {
-                AuthenticationResult result = context.Validate(username.ToUpper(), password, Properties.Settings.Default.SecurityPassphrase);
+                
+                DbContextJosh.AuthenticationResult result = context.Validate(username.ToUpper(), password, Properties.Settings.Default.SecurityPassphrase);
 
-                if (result == AuthenticationResult.Pass)
+                if (result == AuthenticateFunctions.AuthenticationResult.Pass)
                 {
-                    var user = context.UserFunctions.GetUser(username.ToUpper());
+                    var user = context._getUser(username.ToUpper()); 
                     Session["UserID"] = user.ID;
-                    Response.Redirect("~/Account/Home.aspx");
+                    Response.Redirect("~/default.aspx");
                 }
-                else if (result == AuthenticationResult.AttemptsExceeded)
+                else if (result == DbContextJosh.AuthenticationResult.AttemptsExceeded)
                 {
                     lblLoginFail.Text = "Account Locked";
                 }
@@ -37,6 +42,7 @@ namespace CMSpaceship.Account
                     lblLoginFail.Text = "Username/Password Incorrect";
                 }
             }
+
         }
     }
 }

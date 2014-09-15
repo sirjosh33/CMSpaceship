@@ -16,61 +16,51 @@ namespace CMSpaceship.Context
         {
            
         }
+        public Contact _getUser(string username)
+        {
+            Contact user = new Contact();
+            var FindUser = (from r in user.Username where Convert.ToString(user) == username select r );
+            //var FindUser = user.Username.Where( => );
+            return user;
+        }
     }
 
     public class AuthenticateFunctions : ReusableContext
+    {
+        //Validate returns a type of AuthenticationResult
+        public AuthenticationResult Validate(string username, string unEncryptedPassword, string passphraseKey, KeySize keySize = KeySize._256, int maxAttempts = 3)
         {
-            public string UN { get; set; }
-            public string PW { get; set; }
-            public string PP { get; set; }
+            Contact user = _getUser(username);
 
-            public bool Validate(string username, string password, string passphrase)
+            // Make Sure User Exists
+            if (user == null)
             {
-                string UN = username;
-                string PW = password;
-                string PP = passphrase;
-                string HeldPass;
-
-                Contact contact = new Contact();
-                contact.Password = CryptographyServices.Decrypt(password,Properties.Settings.Default.SecurityPassphrase);
-               
-
-                bool result = false;
-
-                return result;
+                return AuthenticationResult.UsernameDoesntExist;
             }
-            //Validate returns a type of AuthenticationResult
-            public AuthenticationResult Validate(string username,string unEncryptedPassword,string passphraseKey,KeySize keySize = KeySize._256,int maxAttempts = 3)
+
+            // Check Attemps
+            if (user.LoginAttempts >= maxAttempts)
             {
-                User user = _getUser(username);
-                // Make Sure User Exists
-                if (user == null)
-                {
-                    return AuthenticationResult.UsernameDoesntExist
-                }
-
-                // Check Attemps
-                if (user.LoginAttempts >= maxAttempts)
-                {
-                    return AuthenticationResult.AttemptsExceeded;
-                }
-
-                // Check for password match
-                if (unEncryptedPassword != CryptographyServices.Decrypt(user.Password, passphraseKey, keySize))
-                {
-                    user.LoginAttempts++;
-                    user.IsLocked = user.LoginAttempts >= maxAttempts ? true : false;
-                    _context.SaveChanges(user);
-                    return AuthenticationResult.PasswordIncorrect;
-                }
-
-                // need to reset the failed attempts
-                user.LoginAttempts = 0;
-                user.IsLocked = false;
-                user.LastAuthenticationDate = DateTime.Now;
-                _context.SaveChanges(user);
-                return AuthenticationResult.Pass;
-
+                return AuthenticationResult.AttemptsExceeded;
             }
+
+            // Check for password match
+            ReusableContext context = new ReusableContext();
+            if (unEncryptedPassword != CryptographyServices.Decrypt(user.Password, passphraseKey, keySize))
+            {
+                user.LoginAttempts++;
+                user.IsLocked = user.LoginAttempts >= maxAttempts ? true : false;
+                
+                context.SaveChanges(user);
+                return AuthenticationResult.PasswordIncorrect;
+            }
+
+            // need to reset the failed attempts
+            user.LoginAttempts = 0;
+            user.IsLocked = false;
+            user.LastAuthenticationDate = DateTime.Now;
+            context.SaveChanges(user);
+            return AuthenticationResult.Pass;
         }
+    }
 }
