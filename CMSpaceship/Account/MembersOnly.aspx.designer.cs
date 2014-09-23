@@ -10,16 +10,25 @@
 namespace CMSpaceship.Account {
     
     
-    public partial class Register {
+    public partial class MembersOnly {
         
         /// <summary>
-        /// form1 control.
+        /// JoshLog control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label JoshLog;
+        
+        /// <summary>
+        /// form2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
         
         /// <summary>
         /// lblFirstName control.
@@ -74,60 +83,6 @@ namespace CMSpaceship.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::SkyGroundLabs.aspnet.Binding.BindableTextBox btxtEmail;
-        
-        /// <summary>
-        /// lblUserName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUserName;
-        
-        /// <summary>
-        /// btxtUsername control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::SkyGroundLabs.aspnet.Binding.BindableTextBox btxtUsername;
-        
-        /// <summary>
-        /// lblPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPassword;
-        
-        /// <summary>
-        /// btxtPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::SkyGroundLabs.aspnet.Binding.BindableTextBox btxtPassword;
-        
-        /// <summary>
-        /// lblConfirmPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblConfirmPassword;
-        
-        /// <summary>
-        /// btxtPasswordConfirm control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::SkyGroundLabs.aspnet.Binding.BindableTextBox btxtPasswordConfirm;
         
         /// <summary>
         /// lblStreet control.
@@ -220,66 +175,12 @@ namespace CMSpaceship.Account {
         protected global::SkyGroundLabs.aspnet.Binding.BindableTextBox btxtPhone1;
         
         /// <summary>
-        /// lblPhone2 control.
+        /// SubmitContact control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPhone2;
-        
-        /// <summary>
-        /// btxtPhone2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::SkyGroundLabs.aspnet.Binding.BindableTextBox btxtPhone2;
-        
-        /// <summary>
-        /// lblSecurityQuestion control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSecurityQuestion;
-        
-        /// <summary>
-        /// btxtSecurityQuestion control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::SkyGroundLabs.aspnet.Binding.BindableTextBox btxtSecurityQuestion;
-        
-        /// <summary>
-        /// lblSecurityAnswer control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSecurityAnswer;
-        
-        /// <summary>
-        /// btxtSecurityAnswer control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::SkyGroundLabs.aspnet.Binding.BindableTextBox btxtSecurityAnswer;
-        
-        /// <summary>
-        /// btn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn;
+        protected global::System.Web.UI.WebControls.Button SubmitContact;
     }
 }

@@ -1,4 +1,3 @@
-C:\Users\Dan\Documents\GitHub\CMSpaceship\CMSpaceship\obj\Release\CMSpaceship.csprojResolveAssemblyReference.cache
 C:\Users\Dan\Documents\GitHub\CMSpaceship\CMSpaceship\bin\CMSpaceship.dll.config
 C:\Users\Dan\Documents\GitHub\CMSpaceship\CMSpaceship\bin\CMSpaceship.dll
 C:\Users\Dan\Documents\GitHub\CMSpaceship\CMSpaceship\bin\CMSpaceship.pdb
@@ -18,3 +17,4 @@ C:\Users\Dan\Documents\GitHub\CMSpaceship\CMSpaceship\bin\SkyGroundLabs.Data.Ent
 C:\Users\Dan\Documents\GitHub\CMSpaceship\CMSpaceship\bin\SkyGroundLabs.Reflection.pdb
 C:\Users\Dan\Documents\GitHub\CMSpaceship\CMSpaceship\obj\Release\CMSpaceship.dll
 C:\Users\Dan\Documents\GitHub\CMSpaceship\CMSpaceship\obj\Release\CMSpaceship.pdb
+C:\Users\Dan\Documents\GitHub\CMSpaceship\CMSpaceship\obj\Release\CMSpaceship.csprojResolveAssemblyReference.cache

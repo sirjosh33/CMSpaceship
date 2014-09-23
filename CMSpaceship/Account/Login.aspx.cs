@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using CMSpaceship.Context;
 using Capsule.Data;
 using Capsule.Data.Tables;
+using SkyGroundLabs.Data.Entity.Mapping;
 
 namespace CMSpaceship.Account
 {
@@ -16,6 +17,7 @@ namespace CMSpaceship.Account
         {
             if (!Page.IsPostBack)
             {
+                
                 //DataContext = new Contact();
             }
         }
@@ -24,15 +26,15 @@ namespace CMSpaceship.Account
         {
             using (var context = new AuthenticateFunctions())
             {
-                
-                DbContextJosh.AuthenticationResult result = context.Validate(username.ToUpper(), password, Properties.Settings.Default.SecurityPassphrase);
+
+                DbContextJosh.AuthenticationResult result = context.Validate(btxtUsername.Text.ToUpper(), btxtPassword.Text, Properties.Settings.Default.SecurityPassphrase);
 
                 if (result == AuthenticateFunctions.AuthenticationResult.Pass)
                 {
                     var user = context._getUser(username.ToUpper()); 
                     Session["UserID"] = user.ID;
-                    Response.Redirect("~/default.aspx");
-                }
+                    Response.Redirect("~/Account/MembersOnly.aspx");
+                }   
                 else if (result == DbContextJosh.AuthenticationResult.AttemptsExceeded)
                 {
                     lblLoginFail.Text = "Account Locked";
@@ -42,7 +44,11 @@ namespace CMSpaceship.Account
                     lblLoginFail.Text = "Username/Password Incorrect";
                 }
             }
+        }
 
+        protected void btn_Login(object sender, EventArgs e)
+        {
+            _login(btxtUsername.Text.ToUpper(), btxtPassword.Text);
         }
     }
 }

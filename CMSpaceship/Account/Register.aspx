@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="CMSpaceship.Account.Register" %>
 
-<%@ Register TagPrefix="uc" Namespace="SkyGroundLabs.aspnet" Assembly="SkyGroundLabs.aspnet" %>
+<%@ Register TagPrefix="uc" Namespace="SkyGroundLabs.aspnet.Binding" Assembly="SkyGroundLabs.aspnet" %>
 
 <!DOCTYPE html>
 
@@ -12,7 +12,6 @@
     <div class="wrapper">
         <form id="form1" runat="server">
             <div>
-                <asp:Label ID="lblFirstName1" runat="server" Text="First Name" />
                 <asp:Label ID="lblFirstName" runat="server" Text="First Name" />
                 <uc:BindableTextBox ID="btxtFirstName" runat="server" Path="FirstName" Width="150px" PropertyName="Text" />
                 <asp:Label ID="lblLastName" runat="server" Text="Last Name" />

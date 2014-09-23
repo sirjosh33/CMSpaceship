@@ -16,12 +16,14 @@ namespace CMSpaceship.Context
         {
            
         }
+
         public Contact _getUser(string username)
         {
-            Contact user = new Contact();
-            var FindUser = (from r in user.Username where Convert.ToString(user) == username select r );
-            //var FindUser = user.Username.Where( => );
-            return user;
+            using(var context = new ReusableContext())
+            {
+                    var contact = context.Contacts.Where(w => w.Username.ToUpper() == username.ToUpper()).FirstOrDefault();
+                    return contact;
+            }
         }
     }
 
@@ -45,7 +47,7 @@ namespace CMSpaceship.Context
             }
 
             // Check for password match
-            ReusableContext context = new ReusableContext();
+            var context = new ReusableContext();
             if (unEncryptedPassword != CryptographyServices.Decrypt(user.Password, passphraseKey, keySize))
             {
                 user.LoginAttempts++;
