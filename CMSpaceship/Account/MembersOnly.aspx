@@ -12,13 +12,14 @@
     </style>
 </head>
 <body>
-    <div id="wrapper">
-        <div>
-            <asp:Label ID="JoshLog" runat="server" Text="Label"></asp:Label>
-        </div>
-   </div>
-    <div id="wrapper-lower">
-        <form id="form2" runat="server">
+    <form id="form2" runat="server">
+        <div id="wrapper-upper"><div style="font-size:19px; background-color: #326fb1">
+            <div>
+                <asp:Label ID="JoshLog" runat="server" Text="Label"></asp:Label>
+            </div>
+            </div>
+       </div>
+        <div id="wrapper-mid">
             <div>
                 <table>
                     <tr>
@@ -48,8 +49,20 @@
                 </table>
                 <asp:Button ID="SubmitContact" runat="server" OnClick="SubmitContact_Click" Text="Submit" />
             </div>
-        </form>
-    </div>
-    
+        </div>
+        <div id="wrapper-lower">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="true">
+                    <Columns>
+                        <asp:TemplateField HeaderText="ID   ">
+
+                        </asp:TemplateField>
+                        <asp:BoundField headertext="First Name" DataField="First Name" />
+                        <asp:BoundField headertext="Last Name" DataField="Last Name" />
+                        <asp:BoundField headertext="Email" DataField="Email" />
+                    </Columns>
+                </asp:GridView>
+                <asp:Button ID="btnGetData" runat="server" OnClick="btnGetData_Click" Text="Get Data" />
+        </div>
+    </form>
 </body>
 </html>

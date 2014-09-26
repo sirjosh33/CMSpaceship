@@ -20,12 +20,17 @@ namespace CMSpaceship.Account
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Page.IsPostBack)
+            {
+                DataContext = new Contact();
+            }
+
             using (ReusableContext dbContext = new ReusableContext())
             {
                 var userID = Convert.ToInt64(Session["UserID"]);
                 
                 Contact contact = dbContext.Contacts.SingleOrDefault(x => x.ID == userID);
-                JoshLog.Text = Convert.ToString("Welcome" + contact.FirstName + " " + contact.LastName);
+                JoshLog.Text = Convert.ToString("Welcome, " + contact.FirstName + " " + contact.LastName);
                 
                 
             }
@@ -48,14 +53,43 @@ namespace CMSpaceship.Account
             PullDataContextFromPage();
             using (ReusableContext dbContext = new ReusableContext())
             {
-                var userID = Convert.ToInt64(Session["UserID"]);
-
-                var assignedCrewIDs = dbContext.Contacts.Where(w => w.ID == userID).Select(w => w.ID).ToList();
-                Contact contact = (Contact)DataContext;
-                contact.AssignedToID = (int)userID;
-                dbContext.SaveChanges((contact));
-
+                //var userID = Convert.ToInt64(Session["UserID"]);
+                //Contact contact = (Contact)DataContext;
+                //var assignedCrewIDs = dbContext.Contacts.Where(w => w.ID == userID).Select(w => w.ID).ToList();
+                ((Contact)DataContext).AssignedToID = Convert.ToInt32(Session["UserID"]);
+                dbContext.SaveChanges(((Contact)DataContext));
+                EmptyTextBoxes(this);
             }
+        }
+
+        public static void EmptyTextBoxes(Control parent)
+        {
+            foreach (Control x in parent.Controls)
+            {
+                if ((x.GetType() == typeof(BindableTextBox)))
+                {
+                    ((TextBox)(x)).Text = string.Empty;
+                }
+
+                if ((x.HasControls()))
+                {
+                    EmptyTextBoxes(x);
+                }
+            }
+        }
+
+
+        private void GetData()
+        {
+            ReusableContext dbContext = new ReusableContext();
+            var userID = Convert.ToInt64(Session["UserID"]);
+            GridView1.DataSource = dbContext.Contacts.Where(w => w.AssignedToID == userID).ToList();
+            GridView1.DataBind();
+        }
+
+        protected void btnGetData_Click(object sender, EventArgs e)
+        {
+            GetData();
         }
     }
 
